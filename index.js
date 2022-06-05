@@ -1,6 +1,11 @@
 function addingEventListener() {
-    var x = document.getElementById("input").value;
-   return document.getElementById("value").innerHTML = "You wrote: " + x;
+    const input = document.getElementById('input');
+
+    function clickAlert() {
+      alert('I was clicked!');
+    }
+    
+    input.addEventListener('click', clickAlert);
   }
 
-  document.getElementById("input").addEventListener("input", addingEventListener, );
+  
